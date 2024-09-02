@@ -1,0 +1,1113 @@
+2024-08-09 11:01:29,360 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:01:45,104 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:01:47,235 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:01:48,319 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:01:49,372 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:03:00,120 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:03:01,012 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:03:01,679 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:03:01,892 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-09 11:03:02,084 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hrms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/__init__.py", line 1333, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 248, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/modules/utils.py", line 271, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-12 16:13:53,158 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'user': 'ravicustomer@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2024-08-12 17:22:28,545 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'user': 'nanicustomersupport@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2024-08-13 10:28:40,148 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'user': 'srikanthuser@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2024-08-13 16:59:37,924 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'user': 'jobseeker@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2024-08-13 16:59:48,428 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'user': 'jobseeker@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2024-08-20 11:31:13,152 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:31:13,531 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:31:21,629 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:31:21,746 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:31:25,298 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:31:25,407 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:37:12,330 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:37:12,441 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:37:15,047 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:37:15,188 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:37:19,428 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:37:19,545 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:46,028 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:46,142 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:46,353 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:46,469 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:46,807 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:46,920 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:47,609 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:47,720 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:48,612 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:48,729 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:49,571 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:49,682 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:50,479 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:50,593 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:51,390 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:51,500 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:52,765 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:52,883 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:53,878 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:53,992 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:54,916 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:55,026 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:55,787 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:55,902 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:56,620 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:56,732 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:57,472 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:41:57,598 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:03,266 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:03,379 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:04,193 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:04,317 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:07,710 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:07,826 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:10,532 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:42:10,648 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:05,464 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:05,575 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:09,043 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:09,153 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:10,277 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:10,387 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:10,963 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:11,076 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:11,424 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:11,538 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:11,767 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:11,880 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:12,406 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:12,516 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:13,357 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:45:13,470 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:10,204 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:10,317 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:11,655 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:11,770 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:12,497 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:12,607 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:13,249 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:13,360 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:13,807 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:13,921 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:50,901 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 11:47:51,147 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:08:29,301 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:08:29,494 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:08:29,625 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:11:03,860 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:11:03,979 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:11:05,250 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:11:05,364 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:11:06,147 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:11:06,256 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:01,166 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:01,285 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:04,872 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:04,983 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:06,480 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:06,591 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:10,982 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:11,172 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:13,351 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 13:14:13,471 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 17:56:32,741 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 17:56:33,156 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 17:56:33,269 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:01:42,980 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:01:43,237 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:32,516 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:32,631 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:38,049 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:38,165 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:40,334 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:40,448 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:42,248 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:42,365 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:43,881 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:07:43,998 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:18:53,685 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:18:53,809 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:19:00,637 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:19:02,567 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:19:02,685 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:19:09,290 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:19:11,459 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:19:11,586 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:12,350 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:12,691 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:13,053 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:44,749 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:44,872 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:49,285 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:28:49,402 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:53,344 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:53,459 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:54,907 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:55,020 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:55,525 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:55,635 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:55,904 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:56,016 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:56,380 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:56,506 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:56,810 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:33:56,935 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:08,094 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:09,075 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:09,208 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:09,627 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:09,755 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:10,331 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:34:10,462 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:38:39,747 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:38:39,891 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:38:42,597 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:38:42,713 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:38:49,477 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:38:49,598 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:21,460 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:21,581 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:24,683 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:24,829 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:26,059 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:26,243 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:26,501 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:26,685 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:27,001 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:27,152 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:27,637 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-20 18:43:27,761 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {}
+2024-08-26 16:51:37,479 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'doctype': 'Workspace Settings', 'cmd': 'frappe.client.get'}
+2024-08-26 16:51:52,626 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'doctype': 'Workspace Settings', 'cmd': 'frappe.client.get'}
+2024-08-26 16:54:33,074 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'doctype': 'Workspace Settings', 'cmd': 'frappe.client.get'}
+2024-08-26 18:09:50,155 ERROR frappe New Exception collected in error log
+Site: dcode.com
+Form Dict: {'doctype': 'Workspace Settings', 'cmd': 'frappe.client.get'}

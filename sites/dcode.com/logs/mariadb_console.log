@@ -1,0 +1,3 @@
+SHOW TABLES LIKE '%asset%';
+SELECT * FROM tabModuleDef WHERE name LIKE '%Assets%';
+SHOW TABLES;

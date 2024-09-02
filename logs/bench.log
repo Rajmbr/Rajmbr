@@ -1,0 +1,1069 @@
+2024-08-08 18:25:18,715 DEBUG cd frappe-bench && python3.11 -m venv env
+2024-08-08 18:25:21,596 DEBUG cd frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-08 18:25:23,204 DEBUG cd frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-08-08 18:25:24,850 LOG Getting frappe
+2024-08-08 18:25:24,850 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-08-08 18:25:30,852 LOG Installing frappe
+2024-08-08 18:25:30,853 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe 
+2024-08-08 18:26:25,436 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && yarn install --check-files
+2024-08-08 18:27:54,913 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-08 18:27:55,076 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-08 18:27:55,077 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-08 18:27:55,077 DEBUG cd frappe-bench && bench build
+2024-08-08 18:27:55,157 INFO /usr/local/bin/bench build
+2024-08-08 18:28:10,901 LOG setting up backups
+2024-08-08 18:28:11,131 LOG backups were set up
+2024-08-08 18:28:11,131 INFO Bench frappe-bench initialized
+2024-08-08 18:28:39,521 INFO /usr/local/bin/bench start
+2024-08-08 18:28:39,791 INFO /usr/local/bin/bench serve --port 8000
+2024-08-08 18:28:39,798 INFO /usr/local/bin/bench watch
+2024-08-08 18:30:29,473 INFO /usr/local/bin/bench start
+2024-08-08 18:30:29,714 INFO /usr/local/bin/bench watch
+2024-08-08 18:30:29,717 INFO /usr/local/bin/bench schedule
+2024-08-08 18:30:29,720 INFO /usr/local/bin/bench worker
+2024-08-08 18:30:29,722 INFO /usr/local/bin/bench serve --port 8000
+2024-08-08 18:32:02,468 INFO /usr/local/bin/bench start
+2024-08-08 18:32:02,704 INFO /usr/local/bin/bench watch
+2024-08-08 18:32:02,720 INFO /usr/local/bin/bench serve --port 8000
+2024-08-08 18:32:02,739 INFO /usr/local/bin/bench worker
+2024-08-08 18:32:02,744 INFO /usr/local/bin/bench schedule
+2024-08-08 18:33:02,945 INFO /usr/local/bin/bench new-site dcode.com
+2024-08-08 18:36:03,089 INFO /usr/local/bin/bench --site dcode.com add-to-hosts
+2024-08-08 18:36:25,137 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-08-08 18:36:25,184 WARNING /usr/local/bin/bench get-app erpnext --branch version-15 executed with exit code 1
+2024-08-08 18:36:35,495 INFO /usr/local/bin/bench get-app https://github.com/frappe/erpnext --branch version-15
+2024-08-08 18:36:35,501 LOG Getting erpnext
+2024-08-08 18:36:35,501 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-15 --depth 1 --origin upstream
+2024-08-08 18:36:40,777 LOG Installing erpnext
+2024-08-08 18:36:40,777 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext 
+2024-08-08 18:36:49,824 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && yarn install --check-files
+2024-08-08 18:36:50,973 DEBUG bench build --app erpnext
+2024-08-08 18:36:51,053 INFO /usr/local/bin/bench build --app erpnext
+2024-08-08 18:36:53,610 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-08 18:36:53,782 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-08 18:36:53,783 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-08 18:37:01,637 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-08-08 18:38:58,217 INFO /usr/local/bin/bench version
+2024-08-08 18:39:27,588 INFO /usr/local/bin/bench remove-app erpnext
+2024-08-08 18:39:27,675 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-08-08 18:39:28,114 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-08-08 18:39:28,382 WARNING /usr/local/bin/bench remove-app erpnext executed with exit code 1
+2024-08-08 18:39:46,757 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-08-08 18:39:50,726 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-08-08
+2024-08-08 18:39:50,728 LOG Getting erpnext
+2024-08-08 18:39:50,729 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-08-08 18:39:55,586 LOG Installing erpnext
+2024-08-08 18:39:55,586 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext 
+2024-08-08 18:39:57,396 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && yarn install --check-files
+2024-08-08 18:39:57,664 DEBUG bench build --app erpnext
+2024-08-08 18:39:57,745 INFO /usr/local/bin/bench build --app erpnext
+2024-08-08 18:39:59,931 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-08 18:40:00,087 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-08 18:40:00,087 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-08 18:40:11,165 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-08-08 18:41:25,708 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-08 18:46:18,964 INFO /usr/local/bin/bench --site dcode.com build
+2024-08-08 18:47:19,571 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-08 18:47:29,788 INFO /usr/local/bin/bench --site dcode.com console
+2024-08-08 18:50:47,018 INFO /usr/local/bin/bench start
+2024-08-08 18:50:47,340 INFO /usr/local/bin/bench schedule
+2024-08-08 18:50:47,355 INFO /usr/local/bin/bench serve --port 8000
+2024-08-08 18:50:47,375 INFO /usr/local/bin/bench watch
+2024-08-08 18:50:47,379 INFO /usr/local/bin/bench worker
+2024-08-08 18:51:37,495 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-08-08 18:51:48,579 INFO /usr/local/bin/bench start
+2024-08-08 18:53:30,939 INFO /usr/local/bin/bench start
+2024-08-08 18:54:38,709 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-08-08 18:55:00,918 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-08-08 18:55:08,419 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-08 18:55:26,692 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-08 18:55:35,106 INFO /usr/local/bin/bench --site dcode.com rebuild
+2024-08-08 18:55:55,859 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-08 18:56:02,807 INFO /usr/local/bin/bench build
+2024-08-08 18:56:19,723 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-08 18:56:46,012 INFO /usr/local/bin/bench update --reset
+2024-08-08 18:56:52,260 LOG pulling frappe
+2024-08-08 18:56:52,261 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-15
+2024-08-08 18:56:54,099 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git reset --hard upstream/version-15
+2024-08-08 18:56:55,730 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git reflog expire --all
+2024-08-08 18:56:55,733 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git gc --prune=all
+2024-08-08 18:56:56,427 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2024-08-08 18:56:56,514 LOG pulling erpnext
+2024-08-08 18:56:56,514 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-15
+2024-08-08 18:56:57,880 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git reset --hard upstream/version-15
+2024-08-08 18:56:58,261 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git reflog expire --all
+2024-08-08 18:56:58,263 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git gc --prune=all
+2024-08-08 18:56:58,638 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && find . -name "*.pyc" -delete
+2024-08-08 18:56:58,666 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-08 18:56:59,427 LOG Installing frappe
+2024-08-08 18:56:59,428 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe 
+2024-08-08 18:57:01,400 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && yarn install --check-files
+2024-08-08 18:57:07,291 LOG Installing erpnext
+2024-08-08 18:57:07,291 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext 
+2024-08-08 18:57:10,712 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && yarn install --check-files
+2024-08-08 18:57:43,449 INFO /usr/local/bin/bench upgrade
+2024-08-08 18:58:51,253 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-08 18:59:01,924 INFO /usr/local/bin/bench build
+2024-08-08 18:59:33,801 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-08 18:59:46,859 INFO /usr/local/bin/bench start
+2024-08-08 19:00:00,291 INFO /usr/local/bin/bench start
+2024-08-08 19:00:00,518 INFO /usr/local/bin/bench schedule
+2024-08-08 19:00:00,518 INFO /usr/local/bin/bench watch
+2024-08-08 19:00:00,557 INFO /usr/local/bin/bench serve --port 8000
+2024-08-08 19:00:00,561 INFO /usr/local/bin/bench worker
+2024-08-08 19:03:17,347 INFO /usr/local/bin/bench get-app --branch version-14 hrms
+2024-08-08 19:03:17,393 WARNING /usr/local/bin/bench get-app --branch version-14 hrms executed with exit code 1
+2024-08-08 19:07:28,851 INFO /usr/local/bin/bench get-app hrms --branch version-15
+2024-08-08 19:07:28,897 WARNING /usr/local/bin/bench get-app hrms --branch version-15 executed with exit code 1
+2024-08-08 19:07:45,325 INFO /usr/local/bin/bench get-app hrms --branch version-15
+2024-08-08 19:07:45,371 WARNING /usr/local/bin/bench get-app hrms --branch version-15 executed with exit code 1
+2024-08-08 19:07:55,617 INFO /usr/local/bin/bench --site erp.syncbricks.com install-app hrms
+2024-08-08 19:13:48,066 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-08 19:14:07,680 INFO /usr/local/bin/bench start
+2024-08-08 19:14:07,905 INFO /usr/local/bin/bench schedule
+2024-08-08 19:14:07,905 INFO /usr/local/bin/bench serve --port 8000
+2024-08-08 19:14:07,922 INFO /usr/local/bin/bench watch
+2024-08-08 19:14:07,925 INFO /usr/local/bin/bench worker
+2024-08-09 00:00:01,193 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-09 06:00:01,889 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-09 10:20:11,986 INFO /usr/local/bin/bench --site erp.syncbricks.com install-app hrms
+2024-08-09 10:24:21,959 INFO /usr/local/bin/bench get-app erpnext_hrms https://github.com/frappe/hrms
+2024-08-09 10:24:21,965 LOG Getting hrms
+2024-08-09 10:24:21,965 DEBUG cd ./apps && git clone https://github.com/frappe/hrms  --depth 1 --origin upstream
+2024-08-09 10:24:24,479 LOG Installing hrms
+2024-08-09 10:24:24,480 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms 
+2024-08-09 10:24:26,395 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && yarn install --check-files
+2024-08-09 10:26:59,079 DEBUG bench build --app hrms
+2024-08-09 10:26:59,518 INFO /usr/local/bin/bench build --app hrms
+2024-08-09 10:27:31,434 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-09 10:27:31,574 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-09 10:27:31,574 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-09 10:28:55,127 INFO /usr/local/bin/bench --site dcode.com install-app erpnext_hrms
+2024-08-09 10:29:57,635 INFO /usr/local/bin/bench get-app erpnext_hrms https://github.com/frappe/hrms
+2024-08-09 10:30:01,415 INFO App moved from apps/hrms to archived/apps/hrms-2024-08-09
+2024-08-09 10:30:01,417 LOG Getting hrms
+2024-08-09 10:30:01,417 DEBUG cd ./apps && git clone https://github.com/frappe/hrms  --depth 1 --origin upstream
+2024-08-09 10:30:05,792 LOG Installing hrms
+2024-08-09 10:30:05,793 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms 
+2024-08-09 10:30:12,367 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && yarn install --check-files
+2024-08-09 10:32:20,499 DEBUG bench build --app hrms
+2024-08-09 10:32:20,743 INFO /usr/local/bin/bench build --app hrms
+2024-08-09 10:32:38,097 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-09 10:32:38,239 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-09 10:32:38,239 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-09 10:33:17,095 INFO /usr/local/bin/bench setup supervisor
+2024-08-09 10:33:17,316 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-08-09 10:33:17,316 LOG Updated supervisord.conf: 'chown' changed from '' to 'mbr-python:mbr-python'
+2024-08-09 10:33:49,742 INFO /usr/local/bin/bench setup supervisor
+2024-08-09 10:33:49,889 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-08-09 10:33:49,889 LOG Updated supervisord.conf: 'chown' changed from '' to 'mbr-python:mbr-python'
+2024-08-09 10:36:55,732 INFO /usr/local/bin/bench restart
+2024-08-09 10:36:56,021 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-09 10:36:56,163 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-09 10:36:56,164 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-09 10:55:38,730 INFO /usr/local/bin/bench get-app hrms https://github.com/frappe/hrms
+2024-08-09 10:55:41,687 INFO App moved from apps/hrms to archived/apps/hrms-2024-08-09_1
+2024-08-09 10:55:41,695 LOG Getting hrms
+2024-08-09 10:55:41,695 DEBUG cd ./apps && git clone https://github.com/frappe/hrms  --depth 1 --origin upstream
+2024-08-09 10:55:44,812 LOG Installing hrms
+2024-08-09 10:55:44,812 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms 
+2024-08-09 10:55:46,846 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && yarn install --check-files
+2024-08-09 10:56:55,887 DEBUG bench build --app hrms
+2024-08-09 10:56:56,025 INFO /usr/local/bin/bench build --app hrms
+2024-08-09 10:57:46,738 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-09 10:57:46,886 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-09 10:57:46,886 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-09 10:58:21,889 INFO /usr/local/bin/bench --site dcode.com install-app hrms
+2024-08-09 11:02:46,240 INFO /usr/local/bin/bench start
+2024-08-09 11:02:47,702 INFO /usr/local/bin/bench schedule
+2024-08-09 11:02:47,703 INFO /usr/local/bin/bench watch
+2024-08-09 11:02:47,734 INFO /usr/local/bin/bench serve --port 8000
+2024-08-09 11:02:47,739 INFO /usr/local/bin/bench worker
+2024-08-09 11:03:18,447 INFO /usr/local/bin/bench start
+2024-08-09 11:03:18,667 INFO /usr/local/bin/bench watch
+2024-08-09 11:03:18,678 INFO /usr/local/bin/bench worker
+2024-08-09 11:03:18,680 INFO /usr/local/bin/bench schedule
+2024-08-09 11:03:18,693 INFO /usr/local/bin/bench serve --port 8000
+2024-08-09 12:00:01,393 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-12 10:24:05,814 INFO /usr/local/bin/bench start
+2024-08-12 10:24:17,473 INFO /usr/local/bin/bench serve --port 8000
+2024-08-12 10:24:17,475 INFO /usr/local/bin/bench worker
+2024-08-12 10:24:17,479 INFO /usr/local/bin/bench schedule
+2024-08-12 10:24:17,479 INFO /usr/local/bin/bench watch
+2024-08-12 10:27:34,318 INFO /usr/local/bin/bench start
+2024-08-12 10:27:34,538 INFO /usr/local/bin/bench serve --port 8000
+2024-08-12 10:27:34,538 INFO /usr/local/bin/bench watch
+2024-08-12 10:27:34,558 INFO /usr/local/bin/bench worker
+2024-08-12 10:27:34,562 INFO /usr/local/bin/bench schedule
+2024-08-12 10:48:38,779 INFO /usr/local/bin/bench --site dcode.com uninstall-app Assets
+2024-08-12 10:59:43,089 INFO /usr/local/bin/bench --site demo.com mariadb
+2024-08-12 10:59:52,542 INFO /usr/local/bin/bench --site demo.com mariadb
+2024-08-12 11:00:11,932 INFO /usr/local/bin/bench --site dcode.com mariadb
+2024-08-12 12:00:01,771 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-12 12:01:24,818 INFO /usr/local/bin/bench --site dcode.com uninstall-app assets
+2024-08-12 12:02:28,288 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-08-12 12:17:12,609 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-08-12 12:17:45,458 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-08-12 12:18:15,841 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-12 12:28:31,136 INFO /usr/local/bin/bench --site dcode.com uninstall-app erpnext
+2024-08-12 13:42:38,889 INFO /usr/local/bin/bench start
+2024-08-12 13:42:39,329 INFO /usr/local/bin/bench serve --port 8000
+2024-08-12 13:42:39,341 INFO /usr/local/bin/bench schedule
+2024-08-12 13:42:39,347 INFO /usr/local/bin/bench worker
+2024-08-12 13:42:39,359 INFO /usr/local/bin/bench watch
+2024-08-12 13:42:55,987 INFO /usr/local/bin/bench start
+2024-08-12 13:44:46,913 INFO /usr/local/bin/bench start
+2024-08-12 13:45:52,486 INFO /usr/local/bin/bench restart
+2024-08-12 13:45:52,772 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-12 13:45:52,916 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-12 13:45:52,917 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-12 13:46:46,704 INFO /usr/local/bin/bench start
+2024-08-12 13:46:46,925 INFO /usr/local/bin/bench watch
+2024-08-12 13:46:46,925 INFO /usr/local/bin/bench worker
+2024-08-12 13:46:46,929 INFO /usr/local/bin/bench schedule
+2024-08-12 13:46:46,934 INFO /usr/local/bin/bench serve --port 8000
+2024-08-12 13:47:49,915 INFO /usr/local/bin/bench restart
+2024-08-12 13:47:50,196 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-12 13:47:50,347 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-12 13:47:50,347 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-12 13:48:02,572 INFO /usr/local/bin/bench start
+2024-08-12 13:48:02,817 INFO /usr/local/bin/bench worker
+2024-08-12 13:48:02,824 INFO /usr/local/bin/bench watch
+2024-08-12 13:48:02,827 INFO /usr/local/bin/bench serve --port 8000
+2024-08-12 13:48:02,830 INFO /usr/local/bin/bench schedule
+2024-08-12 13:49:37,025 INFO /usr/local/bin/bench start
+2024-08-12 13:49:37,250 INFO /usr/local/bin/bench watch
+2024-08-12 13:49:37,283 INFO /usr/local/bin/bench serve --port 8000
+2024-08-12 13:49:37,284 INFO /usr/local/bin/bench worker
+2024-08-12 13:49:37,289 INFO /usr/local/bin/bench schedule
+2024-08-12 18:00:03,604 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 00:00:09,291 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 06:00:02,943 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 12:00:03,622 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 18:00:07,008 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-14 10:22:14,234 INFO /usr/local/bin/bench start
+2024-08-14 10:22:21,386 INFO /usr/local/bin/bench serve --port 8000
+2024-08-14 10:22:21,388 INFO /usr/local/bin/bench worker
+2024-08-14 10:22:21,390 INFO /usr/local/bin/bench schedule
+2024-08-14 10:22:21,419 INFO /usr/local/bin/bench watch
+2024-08-14 12:00:02,316 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-14 13:59:19,993 INFO /usr/local/bin/bench uninstall-app erpnext_sales
+2024-08-14 14:00:50,463 INFO /usr/local/bin/bench uninstall-app erpnext_sales --site dcode.com
+2024-08-14 14:01:43,455 INFO /usr/local/bin/bench --site dcode.com uninstall-app erpnext_sales
+2024-08-14 14:02:22,989 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-08-14 15:22:57,169 INFO /usr/local/bin/bench --site dcode.com uninstall-app erpnext
+2024-08-14 18:00:01,461 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 00:00:03,285 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 06:00:01,387 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 12:00:02,679 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 18:00:01,369 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 00:00:11,258 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 06:00:02,865 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 12:00:01,666 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 18:00:01,656 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 00:00:01,538 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 06:00:01,499 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 12:00:01,845 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 18:00:01,866 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 00:00:01,940 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 06:00:01,576 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 12:00:01,815 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 18:00:02,507 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 00:00:01,211 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 06:00:02,274 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 12:00:02,801 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 18:00:02,187 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 00:00:10,651 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 06:00:02,421 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 11:12:33,281 INFO /usr/local/bin/bench start
+2024-08-20 11:13:59,980 INFO /usr/local/bin/bench start
+2024-08-20 11:14:55,252 INFO /usr/local/bin/bench start
+2024-08-20 11:16:06,779 INFO /usr/local/bin/bench start
+2024-08-20 11:16:06,998 INFO /usr/local/bin/bench worker
+2024-08-20 11:16:06,998 INFO /usr/local/bin/bench schedule
+2024-08-20 11:16:07,007 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 11:16:07,010 INFO /usr/local/bin/bench watch
+2024-08-20 11:17:40,796 INFO /usr/local/bin/bench start
+2024-08-20 11:17:41,018 INFO /usr/local/bin/bench schedule
+2024-08-20 11:17:41,052 INFO /usr/local/bin/bench watch
+2024-08-20 11:17:41,055 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 11:17:41,058 INFO /usr/local/bin/bench worker
+2024-08-20 11:24:18,934 INFO /usr/local/bin/bench update --pull
+2024-08-20 11:24:23,038 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-20 11:24:50,421 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git fetch upstream --unshallow
+2024-08-20 11:27:35,260 LOG pulling frappe
+2024-08-20 11:27:35,277 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git pull  upstream version-15
+2024-08-20 11:27:36,573 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2024-08-20 11:27:43,128 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git fetch upstream --unshallow
+2024-08-20 11:27:50,627 LOG pulling hrms
+2024-08-20 11:27:50,627 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git pull  upstream develop
+2024-08-20 11:27:51,195 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && find . -name "*.pyc" -delete
+2024-08-20 11:27:56,162 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git fetch upstream --unshallow
+2024-08-20 11:31:44,727 LOG pulling erpnext
+2024-08-20 11:31:44,750 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git pull  upstream version-15
+2024-08-20 11:31:46,236 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && find . -name "*.pyc" -delete
+2024-08-20 11:32:31,921 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 11:32:32,085 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 11:32:32,086 WARNING /usr/local/bin/bench update --pull executed with exit code 1
+2024-08-20 11:32:46,942 INFO /usr/local/bin/bench update --patch
+2024-08-20 11:32:49,623 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-20 11:33:45,528 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 11:33:45,750 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 11:33:45,751 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-20 11:34:26,211 INFO /usr/local/bin/bench migrate
+2024-08-20 11:35:11,714 INFO /usr/local/bin/bench migrate --site dcode.com
+2024-08-20 11:35:40,393 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-20 11:35:58,243 INFO /usr/local/bin/bench migrate
+2024-08-20 11:36:18,492 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-20 11:36:57,917 INFO /usr/local/bin/bench start
+2024-08-20 11:36:58,872 INFO /usr/local/bin/bench schedule
+2024-08-20 11:36:58,873 INFO /usr/local/bin/bench worker
+2024-08-20 11:36:58,882 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 11:36:58,883 INFO /usr/local/bin/bench watch
+2024-08-20 11:39:05,828 INFO /usr/local/bin/bench init frappe-bench --force
+2024-08-20 11:39:05,889 WARNING /usr/local/bin/bench init frappe-bench --force executed with exit code 2
+2024-08-20 11:39:42,620 INFO /usr/local/bin/bench init frappe-bench
+2024-08-20 11:39:42,737 DEBUG cd frappe-bench && python3 -m venv env
+2024-08-20 11:39:45,587 DEBUG cd frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-20 11:39:47,601 DEBUG cd frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-08-20 11:39:49,232 LOG Getting frappe
+2024-08-20 11:39:49,233 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-08-20 11:39:53,757 LOG Installing frappe
+2024-08-20 11:39:53,757 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/apps/frappe 
+2024-08-20 11:40:02,309 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/apps/frappe  executed with exit code 1
+2024-08-20 11:40:03,345 ERROR There was a problem while creating frappe-bench
+2024-08-20 11:40:12,173 INFO Rolling back Bench "frappe-bench"
+2024-08-20 11:41:31,001 INFO /usr/local/bin/bench init frappe-bench
+2024-08-20 11:41:31,038 DEBUG cd frappe-bench && python3 -m venv env
+2024-08-20 11:41:32,280 DEBUG cd frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-20 11:41:34,329 DEBUG cd frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-08-20 11:41:35,022 LOG Getting frappe
+2024-08-20 11:41:35,022 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-08-20 11:41:39,516 LOG Installing frappe
+2024-08-20 11:41:39,516 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/apps/frappe 
+2024-08-20 11:41:47,348 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/frappe-bench/apps/frappe  executed with exit code 1
+2024-08-20 11:41:48,353 ERROR There was a problem while creating frappe-bench
+2024-08-20 11:42:20,415 INFO Rolling back Bench "frappe-bench"
+2024-08-20 11:47:40,447 INFO /usr/local/bin/bench start
+2024-08-20 11:47:41,852 INFO /usr/local/bin/bench schedule
+2024-08-20 11:47:41,863 INFO /usr/local/bin/bench worker
+2024-08-20 11:47:41,879 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 11:47:41,881 INFO /usr/local/bin/bench watch
+2024-08-20 12:00:03,138 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 13:04:30,661 INFO /usr/local/bin/bench start
+2024-08-20 13:06:22,498 INFO /usr/local/bin/bench start
+2024-08-20 13:06:22,717 INFO /usr/local/bin/bench worker
+2024-08-20 13:06:22,717 INFO /usr/local/bin/bench watch
+2024-08-20 13:06:22,746 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 13:06:22,747 INFO /usr/local/bin/bench schedule
+2024-08-20 13:12:19,990 INFO /usr/local/bin/bench stop
+2024-08-20 13:13:46,748 INFO /usr/local/bin/bench start
+2024-08-20 13:13:46,990 INFO /usr/local/bin/bench watch
+2024-08-20 13:13:46,991 INFO /usr/local/bin/bench schedule
+2024-08-20 13:13:47,007 INFO /usr/local/bin/bench worker
+2024-08-20 13:13:47,009 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 17:54:06,310 INFO /usr/local/bin/bench start
+2024-08-20 17:54:10,592 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 17:54:10,592 INFO /usr/local/bin/bench schedule
+2024-08-20 17:54:10,594 INFO /usr/local/bin/bench worker
+2024-08-20 17:54:10,600 INFO /usr/local/bin/bench watch
+2024-08-20 17:55:29,178 INFO /usr/local/bin/bench start
+2024-08-20 17:55:29,402 INFO /usr/local/bin/bench watch
+2024-08-20 17:55:29,404 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 17:55:29,434 INFO /usr/local/bin/bench schedule
+2024-08-20 17:55:29,437 INFO /usr/local/bin/bench worker
+2024-08-20 18:00:02,252 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 18:01:31,231 INFO /usr/local/bin/bench start
+2024-08-20 18:01:31,452 INFO /usr/local/bin/bench schedule
+2024-08-20 18:01:31,452 INFO /usr/local/bin/bench watch
+2024-08-20 18:01:31,485 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:01:31,490 INFO /usr/local/bin/bench worker
+2024-08-20 18:09:52,828 INFO /usr/local/bin/bench restart
+2024-08-20 18:10:00,867 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 18:10:01,128 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 18:10:01,129 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-20 18:11:25,765 INFO /usr/local/bin/bench restart
+2024-08-20 18:11:26,051 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 18:11:26,247 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 18:11:26,247 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-20 18:18:10,392 INFO /usr/local/bin/bench start
+2024-08-20 18:18:10,611 INFO /usr/local/bin/bench watch
+2024-08-20 18:18:10,630 INFO /usr/local/bin/bench worker
+2024-08-20 18:18:10,646 INFO /usr/local/bin/bench schedule
+2024-08-20 18:18:10,649 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:21:19,277 INFO /usr/local/bin/bench status
+2024-08-20 18:26:22,785 INFO /usr/local/bin/bench --version
+2024-08-20 18:27:30,920 INFO /usr/local/bin/bench restart
+2024-08-20 18:27:31,374 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 18:27:31,513 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 18:27:31,514 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-20 18:27:45,429 INFO /usr/local/bin/bench start
+2024-08-20 18:27:45,685 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:27:45,688 INFO /usr/local/bin/bench watch
+2024-08-20 18:27:45,689 INFO /usr/local/bin/bench worker
+2024-08-20 18:27:45,689 INFO /usr/local/bin/bench schedule
+2024-08-20 18:32:38,836 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-20 18:32:48,152 INFO /usr/local/bin/bench start
+2024-08-20 18:32:48,399 INFO /usr/local/bin/bench worker
+2024-08-20 18:32:48,403 INFO /usr/local/bin/bench watch
+2024-08-20 18:32:48,417 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:32:48,431 INFO /usr/local/bin/bench schedule
+2024-08-20 18:33:24,002 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-20 18:34:02,455 INFO /usr/local/bin/bench start
+2024-08-20 18:34:02,674 INFO /usr/local/bin/bench schedule
+2024-08-20 18:34:02,694 INFO /usr/local/bin/bench worker
+2024-08-20 18:34:02,694 INFO /usr/local/bin/bench watch
+2024-08-20 18:34:02,711 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:38:27,744 INFO /usr/local/bin/bench start
+2024-08-20 18:38:27,965 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:38:27,968 INFO /usr/local/bin/bench worker
+2024-08-20 18:38:28,001 INFO /usr/local/bin/bench schedule
+2024-08-20 18:38:28,004 INFO /usr/local/bin/bench watch
+2024-08-20 18:39:40,987 INFO /usr/local/bin/bench restart
+2024-08-20 18:39:41,264 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 18:39:41,419 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 18:39:41,419 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-20 18:40:43,007 INFO /usr/local/bin/bench update --patch
+2024-08-20 18:40:49,649 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-20 18:41:26,725 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-20 18:43:13,219 INFO /usr/local/bin/bench start
+2024-08-20 18:43:13,446 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:43:13,451 INFO /usr/local/bin/bench worker
+2024-08-20 18:43:13,464 INFO /usr/local/bin/bench watch
+2024-08-20 18:43:13,488 INFO /usr/local/bin/bench schedule
+2024-08-20 18:44:19,678 INFO /usr/local/bin/bench start
+2024-08-20 18:44:20,183 INFO /usr/local/bin/bench watch
+2024-08-20 18:44:20,193 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 18:44:20,193 INFO /usr/local/bin/bench schedule
+2024-08-20 18:44:20,199 INFO /usr/local/bin/bench worker
+2024-08-20 18:45:15,739 INFO /usr/local/bin/bench migrate
+2024-08-20 18:46:25,493 INFO /usr/local/bin/bench restart
+2024-08-20 18:46:25,803 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 18:46:25,941 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 18:46:25,942 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-20 18:46:34,203 INFO /usr/local/bin/bench schedule
+2024-08-20 18:53:31,126 INFO /usr/local/bin/bench schedule
+2024-08-20 18:57:42,657 INFO /usr/local/bin/bench --site dcode.com set-maintenance-mode off
+2024-08-20 18:57:49,818 INFO /usr/local/bin/bench restart
+2024-08-20 18:57:50,097 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-20 18:57:50,240 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-20 18:57:50,240 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-20 18:57:57,769 INFO /usr/local/bin/bench start
+2024-08-20 18:57:57,996 INFO /usr/local/bin/bench worker
+2024-08-20 18:57:57,999 INFO /usr/local/bin/bench watch
+2024-08-20 18:57:58,028 INFO /usr/local/bin/bench schedule
+2024-08-20 18:57:58,030 INFO /usr/local/bin/bench serve --port 8000
+2024-08-21 00:00:03,791 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 06:00:02,587 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 12:00:02,926 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 12:36:47,000 INFO /usr/local/bin/bench --site dcode.com install-app my_helpdesk
+2024-08-21 12:37:26,428 INFO /usr/local/bin/bench --site dcode.com install-app my_helpdesk
+2024-08-21 12:40:06,659 INFO /usr/local/bin/bench --site dcode.com install-app my_helpdesk
+2024-08-21 12:42:34,257 INFO /usr/local/bin/bench --site helpdesk.test install-app helpdesk
+2024-08-21 12:43:11,593 INFO /usr/local/bin/bench --site list
+2024-08-21 12:43:57,964 INFO /usr/local/bin/bench --site list
+2024-08-21 12:44:51,415 INFO /usr/local/bin/bench --site dcode.com install-app helpdesk
+2024-08-21 12:45:16,167 INFO /usr/local/bin/bench --site list
+2024-08-21 12:47:08,447 INFO /usr/local/bin/bench --version
+2024-08-21 12:48:28,474 INFO /usr/local/bin/bench list-apps
+2024-08-21 12:48:58,940 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:49:00,041 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:49:24,933 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:49:24,979 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:50:32,293 INFO /usr/local/bin/bench clear-cache
+2024-08-21 12:50:56,028 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-21 12:51:26,454 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:51:26,500 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:51:36,502 INFO /usr/local/bin/bench --site dcode.com install-app helpdesk
+2024-08-21 12:53:02,997 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:53:03,045 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:54:39,092 INFO /usr/local/bin/bench start
+2024-08-21 12:54:40,008 INFO /usr/local/bin/bench schedule
+2024-08-21 12:54:40,009 INFO /usr/local/bin/bench watch
+2024-08-21 12:54:40,013 INFO /usr/local/bin/bench serve --port 8000
+2024-08-21 12:54:40,016 INFO /usr/local/bin/bench worker
+2024-08-21 12:56:08,257 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:56:08,539 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:56:31,363 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:56:31,409 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:58:35,876 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 12:58:35,922 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 12:59:32,655 INFO /usr/local/bin/bench get-app helpdesk https://github.com/path/to/helpdesk
+2024-08-21 12:59:32,661 LOG Getting helpdesk
+2024-08-21 12:59:32,661 DEBUG cd ./apps && git clone https://github.com/path/to/helpdesk  --depth 1 --origin upstream
+2024-08-21 12:59:34,108 WARNING cd ./apps && git clone https://github.com/path/to/helpdesk  --depth 1 --origin upstream executed with exit code 128
+2024-08-21 12:59:34,109 WARNING /usr/local/bin/bench get-app helpdesk https://github.com/path/to/helpdesk executed with exit code 1
+2024-08-21 13:00:37,414 INFO /usr/local/bin/bench get-app helpdesk https://github.com/path/to/helpdesk
+2024-08-21 13:00:37,420 LOG Getting helpdesk
+2024-08-21 13:00:37,420 DEBUG cd ./apps && git clone https://github.com/path/to/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:00:37,679 WARNING cd ./apps && git clone https://github.com/path/to/helpdesk  --depth 1 --origin upstream executed with exit code 128
+2024-08-21 13:00:37,680 WARNING /usr/local/bin/bench get-app helpdesk https://github.com/path/to/helpdesk executed with exit code 1
+2024-08-21 13:00:45,586 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 13:00:45,632 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 13:00:57,853 INFO /usr/local/bin/bench start
+2024-08-21 13:00:58,169 INFO /usr/local/bin/bench schedule
+2024-08-21 13:00:58,172 INFO /usr/local/bin/bench watch
+2024-08-21 13:00:58,185 INFO /usr/local/bin/bench serve --port 8000
+2024-08-21 13:00:58,188 INFO /usr/local/bin/bench worker
+2024-08-21 13:01:06,421 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 13:01:06,470 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 13:01:14,376 INFO /usr/local/bin/bench get-app helpdesk
+2024-08-21 13:01:14,422 WARNING /usr/local/bin/bench get-app helpdesk executed with exit code 1
+2024-08-21 13:01:34,848 INFO /usr/local/bin/bench get-app helpdesk https://github.com/path/to/helpdesk
+2024-08-21 13:01:34,854 LOG Getting helpdesk
+2024-08-21 13:01:34,854 DEBUG cd ./apps && git clone https://github.com/path/to/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:01:35,237 WARNING cd ./apps && git clone https://github.com/path/to/helpdesk  --depth 1 --origin upstream executed with exit code 128
+2024-08-21 13:01:35,238 WARNING /usr/local/bin/bench get-app helpdesk https://github.com/path/to/helpdesk executed with exit code 1
+2024-08-21 13:03:31,104 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-21 13:06:10,009 INFO /usr/local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk
+2024-08-21 13:06:10,015 LOG Getting helpdesk
+2024-08-21 13:06:10,015 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:06:12,977 LOG Installing helpdesk
+2024-08-21 13:06:12,977 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk 
+2024-08-21 13:06:24,830 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-21 13:12:29,894 DEBUG bench build --app helpdesk
+2024-08-21 13:12:30,276 INFO /usr/local/bin/bench build --app helpdesk
+2024-08-21 13:13:59,522 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-21 13:13:59,984 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-21 13:13:59,984 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-21 13:15:28,745 INFO /usr/local/bin/bench start
+2024-08-21 13:15:29,776 INFO /usr/local/bin/bench worker
+2024-08-21 13:15:29,776 INFO /usr/local/bin/bench serve --port 8000
+2024-08-21 13:15:29,777 INFO /usr/local/bin/bench schedule
+2024-08-21 13:15:29,782 INFO /usr/local/bin/bench watch
+2024-08-21 13:16:25,926 INFO /usr/local/bin/bench restart
+2024-08-21 13:16:26,204 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-21 13:16:26,345 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-21 13:16:26,345 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-21 13:17:40,931 INFO /usr/local/bin/bench restart
+2024-08-21 13:17:41,209 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-21 13:17:41,364 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-21 13:17:41,365 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-21 13:19:33,443 INFO /usr/local/bin/bench start
+2024-08-21 13:19:33,680 INFO /usr/local/bin/bench schedule
+2024-08-21 13:19:33,682 INFO /usr/local/bin/bench watch
+2024-08-21 13:19:33,684 INFO /usr/local/bin/bench worker
+2024-08-21 13:19:33,700 INFO /usr/local/bin/bench serve --port 8000
+2024-08-21 13:21:09,612 INFO /usr/local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk
+2024-08-21 13:21:14,835 INFO App moved from apps/helpdesk to archived/apps/helpdesk-2024-08-21
+2024-08-21 13:21:14,844 LOG Getting helpdesk
+2024-08-21 13:21:14,845 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:21:22,311 LOG Installing helpdesk
+2024-08-21 13:21:22,311 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk 
+2024-08-21 13:21:49,446 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-21 13:24:12,804 DEBUG bench build --app helpdesk
+2024-08-21 13:24:12,884 INFO /usr/local/bin/bench build --app helpdesk
+2024-08-21 13:24:26,238 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-21 13:24:26,376 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-21 13:24:26,377 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-21 13:26:08,106 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-21 13:28:47,588 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-21 13:29:20,598 INFO /usr/local/bin/bench start
+2024-08-21 13:29:20,822 INFO /usr/local/bin/bench schedule
+2024-08-21 13:29:20,822 INFO /usr/local/bin/bench worker
+2024-08-21 13:29:20,852 INFO /usr/local/bin/bench serve --port 8000
+2024-08-21 13:29:20,861 INFO /usr/local/bin/bench watch
+2024-08-21 13:30:08,028 INFO /usr/local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk
+2024-08-21 13:30:10,563 INFO App moved from apps/helpdesk to archived/apps/helpdesk-2024-08-21_1
+2024-08-21 13:30:10,572 LOG Getting helpdesk
+2024-08-21 13:30:10,573 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:30:12,857 LOG Installing helpdesk
+2024-08-21 13:30:12,858 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk 
+2024-08-21 13:30:14,232 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-21 13:30:52,632 DEBUG bench build --app helpdesk
+2024-08-21 13:30:52,822 INFO /usr/local/bin/bench build --app helpdesk
+2024-08-21 13:31:39,549 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-21 13:31:39,794 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-21 13:31:39,794 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-21 13:33:59,118 INFO /usr/local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk
+2024-08-21 13:34:02,667 INFO App moved from apps/helpdesk to archived/apps/helpdesk-2024-08-21_2
+2024-08-21 13:34:02,676 LOG Getting helpdesk
+2024-08-21 13:34:02,676 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:34:08,386 LOG Installing helpdesk
+2024-08-21 13:34:08,411 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk 
+2024-08-21 13:34:17,576 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-21 13:36:26,731 WARNING /usr/local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk executed with exit code 1
+2024-08-21 13:36:29,350 INFO /usr/local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk
+2024-08-21 13:36:31,332 INFO App moved from apps/helpdesk to archived/apps/helpdesk-2024-08-21_3
+2024-08-21 13:36:31,340 LOG Getting helpdesk
+2024-08-21 13:36:31,340 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk  --depth 1 --origin upstream
+2024-08-21 13:36:33,957 LOG Installing helpdesk
+2024-08-21 13:36:33,957 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk 
+2024-08-21 13:36:35,336 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-21 13:38:15,532 DEBUG bench build --app helpdesk
+2024-08-21 13:38:15,641 INFO /usr/local/bin/bench build --app helpdesk
+2024-08-21 13:38:53,770 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-21 13:38:53,984 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-21 13:38:53,984 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-21 13:39:52,781 INFO /usr/local/bin/bench --site your-site-name install-app helpdesk
+2024-08-21 13:40:05,493 INFO /usr/local/bin/bench --site dcode.com install-app helpdesk
+2024-08-21 13:40:54,587 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-21 15:02:35,337 INFO /usr/local/bin/bench --site dcode.com update
+2024-08-21 15:02:35,350 WARNING /usr/local/bin/bench --site dcode.com update executed with exit code 2
+2024-08-21 18:00:05,068 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-22 10:28:07,149 INFO /usr/local/bin/bench start
+2024-08-22 10:28:15,380 INFO /usr/local/bin/bench watch
+2024-08-22 10:28:15,380 INFO /usr/local/bin/bench serve --port 8000
+2024-08-22 10:28:15,380 INFO /usr/local/bin/bench schedule
+2024-08-22 10:28:15,382 INFO /usr/local/bin/bench worker
+2024-08-22 10:59:10,626 INFO /usr/local/bin/bench version
+2024-08-22 10:59:27,068 INFO /usr/local/bin/bench version
+2024-08-22 12:00:01,959 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-22 14:53:05,359 INFO /usr/local/bin/bench start
+2024-08-22 14:53:10,274 INFO /usr/local/bin/bench watch
+2024-08-22 14:53:10,276 INFO /usr/local/bin/bench worker
+2024-08-22 14:53:10,310 INFO /usr/local/bin/bench serve --port 8000
+2024-08-22 14:53:10,310 INFO /usr/local/bin/bench schedule
+2024-08-22 15:07:05,212 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-22 15:07:16,953 INFO /usr/local/bin/bench --site dcode.com build
+2024-08-22 15:08:49,902 INFO /usr/local/bin/bench restart
+2024-08-22 15:08:58,555 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 15:08:58,697 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 15:08:58,697 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-22 15:09:08,430 INFO /usr/local/bin/bench start
+2024-08-22 15:09:10,075 INFO /usr/local/bin/bench serve --port 8000
+2024-08-22 15:09:10,075 INFO /usr/local/bin/bench watch
+2024-08-22 15:09:10,096 INFO /usr/local/bin/bench schedule
+2024-08-22 15:09:10,096 INFO /usr/local/bin/bench worker
+2024-08-22 17:51:07,300 INFO /usr/local/bin/bench start
+2024-08-22 17:51:14,301 INFO /usr/local/bin/bench serve --port 8000
+2024-08-22 17:51:14,303 INFO /usr/local/bin/bench schedule
+2024-08-22 17:51:14,303 INFO /usr/local/bin/bench worker
+2024-08-22 17:51:14,304 INFO /usr/local/bin/bench watch
+2024-08-22 17:54:25,367 INFO /usr/local/bin/bench start
+2024-08-22 17:54:25,589 INFO /usr/local/bin/bench schedule
+2024-08-22 17:54:25,597 INFO /usr/local/bin/bench worker
+2024-08-22 17:54:25,615 INFO /usr/local/bin/bench watch
+2024-08-22 17:54:25,618 INFO /usr/local/bin/bench serve --port 8000
+2024-08-22 18:00:02,556 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 00:00:01,941 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 06:00:02,550 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 12:00:04,613 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 12:07:49,286 INFO /usr/local/bin/bench restart
+2024-08-23 12:08:05,661 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-23 12:08:05,990 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-23 12:08:05,990 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-23 12:08:16,810 INFO /usr/local/bin/bench start
+2024-08-23 12:08:18,506 INFO /usr/local/bin/bench watch
+2024-08-23 12:08:18,508 INFO /usr/local/bin/bench worker
+2024-08-23 12:08:18,539 INFO /usr/local/bin/bench serve --port 8000
+2024-08-23 12:08:18,539 INFO /usr/local/bin/bench schedule
+2024-08-23 18:00:03,023 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 00:00:04,493 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 06:00:02,166 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 12:00:03,301 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 17:02:38,493 INFO /usr/local/bin/bench start
+2024-08-24 17:03:05,965 INFO /usr/local/bin/bench worker
+2024-08-24 17:03:05,968 INFO /usr/local/bin/bench serve --port 8000
+2024-08-24 17:03:05,986 INFO /usr/local/bin/bench watch
+2024-08-24 17:03:05,995 INFO /usr/local/bin/bench schedule
+2024-08-24 18:00:23,926 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 00:00:14,095 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 06:00:12,259 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 12:00:06,577 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 17:22:47,938 INFO /usr/local/bin/bench start
+2024-08-25 17:23:14,918 INFO /usr/local/bin/bench serve --port 8000
+2024-08-25 17:23:14,918 INFO /usr/local/bin/bench watch
+2024-08-25 17:23:14,920 INFO /usr/local/bin/bench schedule
+2024-08-25 17:23:14,920 INFO /usr/local/bin/bench worker
+2024-08-25 18:00:50,416 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 10:26:06,486 INFO /usr/local/bin/bench start
+2024-08-26 10:26:26,595 INFO /usr/local/bin/bench worker
+2024-08-26 10:26:26,601 INFO /usr/local/bin/bench watch
+2024-08-26 10:26:26,602 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 10:26:26,602 INFO /usr/local/bin/bench schedule
+2024-08-26 11:59:56,343 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-26 12:00:01,667 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 12:59:11,812 INFO /usr/local/bin/bench clear-cache
+2024-08-26 12:59:58,935 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 13:01:20,545 INFO /usr/local/bin/bench --site dcode.com restart
+2024-08-26 13:01:20,558 WARNING /usr/local/bin/bench --site dcode.com restart executed with exit code 2
+2024-08-26 13:02:34,832 INFO /usr/local/bin/bench start
+2024-08-26 13:02:48,639 INFO /usr/local/bin/bench schedule
+2024-08-26 13:02:48,640 INFO /usr/local/bin/bench worker
+2024-08-26 13:02:48,646 INFO /usr/local/bin/bench watch
+2024-08-26 13:02:48,648 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 13:04:40,381 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-26 13:17:45,871 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 13:20:57,240 INFO /usr/local/bin/bench --site dcode.com restart
+2024-08-26 13:20:57,303 WARNING /usr/local/bin/bench --site dcode.com restart executed with exit code 2
+2024-08-26 13:21:38,434 INFO /usr/local/bin/bench start
+2024-08-26 13:21:48,968 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 13:21:48,968 INFO /usr/local/bin/bench schedule
+2024-08-26 13:21:48,973 INFO /usr/local/bin/bench worker
+2024-08-26 13:21:48,974 INFO /usr/local/bin/bench watch
+2024-08-26 13:29:25,332 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-26 13:35:16,179 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 13:35:51,778 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 13:36:00,529 INFO /usr/local/bin/bench update --patch
+2024-08-26 13:36:15,064 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 13:38:38,605 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 13:38:39,101 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 13:38:39,101 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-26 13:39:00,100 INFO /usr/local/bin/bench restart
+2024-08-26 13:39:00,386 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 13:39:00,613 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 13:39:00,616 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-26 13:39:29,001 INFO /usr/local/bin/bench build
+2024-08-26 15:14:59,655 INFO /usr/local/bin/bench start
+2024-08-26 15:15:00,600 INFO /usr/local/bin/bench watch
+2024-08-26 15:15:00,603 INFO /usr/local/bin/bench schedule
+2024-08-26 15:15:00,634 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 15:15:00,636 INFO /usr/local/bin/bench worker
+2024-08-26 15:19:51,216 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 15:20:01,702 INFO /usr/local/bin/bench update --patch
+2024-08-26 15:20:12,905 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 15:21:29,513 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 15:21:29,651 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 15:21:29,651 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-26 15:22:06,208 INFO /usr/local/bin/bench build
+2024-08-26 15:25:41,069 INFO /usr/local/bin/bench --site dcode.com reload-doc
+2024-08-26 15:27:01,167 INFO /usr/local/bin/bench --site dcode.com reload-doc setup doctype home
+2024-08-26 15:27:38,357 INFO /usr/local/bin/bench --site dcode.com reload-doc setup module_onboarding home
+2024-08-26 15:29:31,824 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 15:29:46,597 INFO /usr/local/bin/bench build
+2024-08-26 15:38:39,054 INFO /usr/local/bin/bench --site dcode.com reload-doc setup module_onboarding home
+2024-08-26 15:40:35,484 INFO /usr/local/bin/bench restart
+2024-08-26 15:41:18,190 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 15:41:18,336 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 15:41:18,337 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-26 15:48:26,873 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 15:48:41,812 INFO /usr/local/bin/bench --site dcode.com reload-doc setup module_onboarding home
+2024-08-26 15:59:50,633 INFO /usr/local/bin/bench --site dcode.com reload-doc setup module_onboarding home
+2024-08-26 16:00:02,692 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 16:00:10,681 INFO /usr/local/bin/bench start
+2024-08-26 16:00:19,457 INFO /usr/local/bin/bench schedule
+2024-08-26 16:00:19,457 INFO /usr/local/bin/bench watch
+2024-08-26 16:00:19,458 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 16:00:19,461 INFO /usr/local/bin/bench worker
+2024-08-26 16:02:03,751 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-26 16:03:15,831 INFO /usr/local/bin/bench start
+2024-08-26 16:03:16,096 INFO /usr/local/bin/bench worker
+2024-08-26 16:03:16,114 INFO /usr/local/bin/bench schedule
+2024-08-26 16:03:16,122 INFO /usr/local/bin/bench watch
+2024-08-26 16:03:16,142 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 16:05:39,337 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 16:05:50,942 INFO /usr/local/bin/bench --site dcode.com reload-doc setup module_onboarding home
+2024-08-26 16:06:35,727 INFO /usr/local/bin/bench --site dcode.com logs
+2024-08-26 16:31:26,003 INFO /usr/local/bin/bench update --patch
+2024-08-26 16:31:37,877 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 16:32:19,539 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-26 16:34:21,151 INFO /usr/local/bin/bench update --reset
+2024-08-26 16:34:26,790 LOG pulling frappe
+2024-08-26 16:34:26,791 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-15
+2024-08-26 16:34:28,458 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git reset --hard upstream/version-15
+2024-08-26 16:34:29,511 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git reflog expire --all
+2024-08-26 16:34:29,528 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git gc --prune=all
+2024-08-26 16:35:19,652 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2024-08-26 16:35:29,920 LOG pulling hrms
+2024-08-26 16:35:29,921 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git fetch --depth=1 --no-tags upstream develop
+2024-08-26 16:35:33,949 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git reset --hard upstream/develop
+2024-08-26 16:35:34,660 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git reflog expire --all
+2024-08-26 16:35:34,742 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git gc --prune=all
+2024-08-26 16:35:42,892 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && find . -name "*.pyc" -delete
+2024-08-26 16:36:24,513 LOG pulling erpnext
+2024-08-26 16:36:24,515 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-15
+2024-08-26 16:36:31,925 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-15 executed with exit code 128
+2024-08-26 16:36:31,927 WARNING /usr/local/bin/bench update --reset executed with exit code 1
+2024-08-26 16:39:53,469 INFO /usr/local/bin/bench update
+2024-08-26 16:39:55,210 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 16:40:08,931 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-08-26 16:41:22,340 INFO /usr/local/bin/bench migrate
+2024-08-26 16:43:31,574 INFO /usr/local/bin/bench --site dcode.com backup
+2024-08-26 16:43:38,918 INFO /usr/local/bin/bench update --reset
+2024-08-26 16:43:42,950 LOG pulling frappe
+2024-08-26 16:43:42,950 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-15
+2024-08-26 16:43:55,706 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git reset --hard upstream/version-15
+2024-08-26 16:43:55,763 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git reflog expire --all
+2024-08-26 16:43:55,789 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && git gc --prune=all
+2024-08-26 16:44:08,984 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2024-08-26 16:44:09,098 LOG pulling hrms
+2024-08-26 16:44:09,098 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git fetch --depth=1 --no-tags upstream develop
+2024-08-26 16:44:10,642 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git reset --hard upstream/develop
+2024-08-26 16:44:10,649 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git reflog expire --all
+2024-08-26 16:44:10,652 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && git gc --prune=all
+2024-08-26 16:44:11,704 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/hrms && find . -name "*.pyc" -delete
+2024-08-26 16:44:11,870 LOG pulling erpnext
+2024-08-26 16:44:11,870 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-15
+2024-08-26 16:44:13,839 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-15 executed with exit code 128
+2024-08-26 16:44:13,839 WARNING /usr/local/bin/bench update --reset executed with exit code 1
+2024-08-26 16:45:01,111 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-08-26 16:48:30,255 INFO /usr/local/bin/bench get-app propla_integrations
+2024-08-26 16:48:30,318 WARNING /usr/local/bin/bench get-app propla_integrations executed with exit code 1
+2024-08-26 16:50:30,108 INFO /usr/local/bin/bench --site dcode.com set-maintenance-mode off
+2024-08-26 16:53:39,336 INFO /usr/local/bin/bench update --pull
+2024-08-26 16:53:43,438 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 16:53:54,861 WARNING /usr/local/bin/bench update --pull executed with exit code 1
+2024-08-26 16:54:12,493 INFO /usr/local/bin/bench --site dcode.com reinstall
+2024-08-26 16:56:07,969 INFO /usr/local/bin/bench update --pull
+2024-08-26 16:56:21,777 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 16:56:32,032 WARNING /usr/local/bin/bench update --pull executed with exit code 1
+2024-08-26 16:57:59,852 INFO /usr/local/bin/bench update --pull
+2024-08-26 16:58:01,405 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 16:58:11,647 WARNING /usr/local/bin/bench update --pull executed with exit code 1
+2024-08-26 16:58:22,522 INFO /usr/local/bin/bench --site dcode.com reinstall
+2024-08-26 16:59:01,854 INFO /usr/local/bin/bench --site dcode.com uninstall-app helpdeskpropla_integrations
+2024-08-26 16:59:29,776 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-08-26 17:00:03,927 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 17:00:25,890 INFO /usr/local/bin/bench start
+2024-08-26 17:00:30,711 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:00:30,712 INFO /usr/local/bin/bench schedule
+2024-08-26 17:00:30,713 INFO /usr/local/bin/bench worker
+2024-08-26 17:00:30,713 INFO /usr/local/bin/bench watch
+2024-08-26 17:01:24,912 INFO /usr/local/bin/bench start
+2024-08-26 17:01:25,155 INFO /usr/local/bin/bench watch
+2024-08-26 17:01:25,155 INFO /usr/local/bin/bench worker
+2024-08-26 17:01:25,195 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:01:25,197 INFO /usr/local/bin/bench schedule
+2024-08-26 17:02:06,518 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 17:02:10,232 INFO /usr/local/bin/bench start
+2024-08-26 17:02:10,471 INFO /usr/local/bin/bench worker
+2024-08-26 17:02:10,471 INFO /usr/local/bin/bench watch
+2024-08-26 17:02:10,512 INFO /usr/local/bin/bench schedule
+2024-08-26 17:02:10,512 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:04:26,900 INFO /usr/local/bin/bench start
+2024-08-26 17:04:27,123 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:04:27,133 INFO /usr/local/bin/bench worker
+2024-08-26 17:04:27,160 INFO /usr/local/bin/bench watch
+2024-08-26 17:04:27,169 INFO /usr/local/bin/bench schedule
+2024-08-26 17:05:41,330 INFO /usr/local/bin/bench get-app helpdeskpropla_integrations
+2024-08-26 17:05:41,389 WARNING /usr/local/bin/bench get-app helpdeskpropla_integrations executed with exit code 1
+2024-08-26 17:05:56,544 INFO /usr/local/bin/bench clear-cache
+2024-08-26 17:06:14,112 INFO /usr/local/bin/bench start
+2024-08-26 17:06:14,356 INFO /usr/local/bin/bench watch
+2024-08-26 17:06:14,365 INFO /usr/local/bin/bench schedule
+2024-08-26 17:06:14,372 INFO /usr/local/bin/bench worker
+2024-08-26 17:06:14,379 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:07:55,417 INFO /usr/local/bin/bench restart
+2024-08-26 17:07:55,988 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 17:07:56,245 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 17:07:56,245 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-26 17:08:53,274 INFO /usr/local/bin/bench init my-bench --frappe-branch version-15
+2024-08-26 17:08:53,312 DEBUG cd my-bench && python3 -m venv env
+2024-08-26 17:08:54,566 DEBUG cd my-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-26 17:08:56,708 DEBUG cd my-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench/env/bin/python -m pip install --quiet wheel
+2024-08-26 17:08:59,431 LOG Getting frappe
+2024-08-26 17:08:59,432 DEBUG cd my-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-08-26 17:09:06,965 LOG Installing frappe
+2024-08-26 17:09:06,985 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench/apps/frappe 
+2024-08-26 17:09:19,870 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench && /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Desktop/ERPNEXT/frappe-bench/my-bench/apps/frappe  executed with exit code 1
+2024-08-26 17:09:20,895 ERROR There was a problem while creating my-bench
+2024-08-26 17:09:29,521 INFO Rolling back Bench "my-bench"
+2024-08-26 17:11:42,360 INFO /usr/local/bin/bench start
+2024-08-26 17:11:42,600 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:11:42,603 INFO /usr/local/bin/bench watch
+2024-08-26 17:11:42,611 INFO /usr/local/bin/bench worker
+2024-08-26 17:11:42,618 INFO /usr/local/bin/bench schedule
+2024-08-26 17:12:43,558 INFO /usr/local/bin/bench update --patch
+2024-08-26 17:12:45,402 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 17:12:55,649 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-26 17:13:01,283 INFO /usr/local/bin/bench clear-cache
+2024-08-26 17:13:17,336 INFO /usr/local/bin/bench restart
+2024-08-26 17:13:17,626 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 17:13:17,789 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 17:13:17,789 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-26 17:14:00,219 INFO /usr/local/bin/bench --site dcode.com uninstall-app helpdeskpropla_integrations
+2024-08-26 17:14:42,033 INFO /usr/local/bin/bench list-apps
+2024-08-26 17:14:47,571 INFO /usr/local/bin/bench list-apps
+2024-08-26 17:14:56,861 INFO /usr/local/bin/bench upgrade
+2024-08-26 17:15:04,031 INFO /usr/local/bin/bench update --patch
+2024-08-26 17:15:05,500 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-26 17:15:15,738 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2024-08-26 17:15:31,087 INFO /usr/local/bin/bench start
+2024-08-26 17:15:31,343 INFO /usr/local/bin/bench watch
+2024-08-26 17:15:31,364 INFO /usr/local/bin/bench worker
+2024-08-26 17:15:31,376 INFO /usr/local/bin/bench schedule
+2024-08-26 17:15:31,385 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:16:17,620 INFO /usr/local/bin/bench start
+2024-08-26 17:16:17,867 INFO /usr/local/bin/bench worker
+2024-08-26 17:16:17,879 INFO /usr/local/bin/bench watch
+2024-08-26 17:16:17,882 INFO /usr/local/bin/bench schedule
+2024-08-26 17:16:17,886 INFO /usr/local/bin/bench serve --port 8000
+2024-08-26 17:16:29,128 INFO /usr/local/bin/bench status
+2024-08-26 17:17:13,687 INFO /usr/local/bin/bench list-apps
+2024-08-26 17:20:32,229 INFO /usr/local/bin/bench clear-cache
+2024-08-26 17:21:11,165 INFO /usr/local/bin/bench restart
+2024-08-26 17:21:11,442 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-26 17:21:11,594 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-26 17:21:11,594 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-08-26 17:21:21,507 INFO /usr/local/bin/bench start
+2024-08-26 17:21:21,984 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 17:21:22,000 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 17:21:22,016 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 17:21:22,022 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 17:45:08,583 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 17:45:19,528 INFO /usr/local/bin/bench build
+2024-08-26 17:46:43,300 INFO /usr/local/bin/bench --site dcode.com install-app helpdesk
+2024-08-26 17:50:19,483 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 17:58:10,954 INFO /usr/local/bin/bench --site dcode.com uninstall-app helpdeskpropla_integrations
+2024-08-26 17:59:53,911 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 18:00:02,063 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 18:00:03,577 INFO /usr/local/bin/bench --site dcode.com rebuild
+2024-08-26 18:01:20,457 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 18:08:48,025 INFO /usr/local/bin/bench start
+2024-08-26 18:08:55,202 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 18:08:55,202 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 18:08:55,202 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 18:08:55,202 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 18:11:39,179 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-26 18:14:23,229 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-26 18:20:24,577 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-26 18:26:38,244 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-26 18:29:52,343 INFO /home/mbr-python/.local/bin/bench clear-cache
+2024-08-26 18:30:30,340 INFO /home/mbr-python/.local/bin/bench --site dcode.com clear-cache
+2024-08-26 18:30:46,681 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 18:31:23,941 INFO /home/mbr-python/.local/bin/bench --site dcode.com clear-cache
+2024-08-26 18:31:31,475 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2024-08-26 18:34:09,317 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-26 18:53:25,995 INFO /home/mbr-python/.local/bin/bench start
+2024-08-26 18:53:48,812 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 18:53:48,813 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 18:53:48,813 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 18:53:48,912 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 18:58:57,414 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-26 18:59:45,757 INFO /home/mbr-python/.local/bin/bench --site dcode.com rebuild
+2024-08-26 19:01:59,693 INFO /home/mbr-python/.local/bin/bench --site dcode.com clear-cache
+2024-08-26 19:02:06,382 INFO /home/mbr-python/.local/bin/bench --site dcode.com clear-cache
+2024-08-26 19:02:16,797 INFO /home/mbr-python/.local/bin/bench build
+2024-08-26 19:06:35,595 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-27 00:00:04,243 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-27 06:00:02,354 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-27 10:10:24,398 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-27 10:10:46,633 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-27 10:26:34,894 INFO /home/mbr-python/.local/bin/bench --site dcode.com clear-cache
+2024-08-27 10:27:32,630 INFO /home/mbr-python/.local/bin/bench clear-website-cache
+2024-08-27 10:28:04,040 INFO /home/mbr-python/.local/bin/bench clear-website-cache --site dcode.com
+2024-08-27 10:28:27,692 INFO /home/mbr-python/.local/bin/bench clear-website-cache --site dcode.com
+2024-08-27 10:28:58,519 INFO /home/mbr-python/.local/bin/bench use dcode.com
+2024-08-27 10:29:11,434 INFO /home/mbr-python/.local/bin/bench clear-website-cache --site dcode.com
+2024-08-27 10:29:40,561 INFO /home/mbr-python/.local/bin/bench build
+2024-08-27 10:33:54,936 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-27 10:51:34,801 INFO /home/mbr-python/.local/bin/bench restart
+2024-08-27 10:52:20,328 DEBUG cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-27 10:52:20,513 WARNING cd /home/mbr-python/Desktop/ERPNEXT/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-27 10:52:20,513 WARNING /home/mbr-python/.local/bin/bench restart executed with exit code 1
+2024-08-27 10:53:24,969 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 10:53:28,928 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 10:53:28,928 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 10:53:28,928 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 10:53:28,928 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 11:13:33,982 INFO /home/mbr-python/.local/bin/bench --site dcode.com migrate
+2024-08-27 11:13:48,817 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 11:13:54,827 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 11:13:54,828 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 11:13:54,834 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 11:13:54,837 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 12:00:05,449 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-27 18:00:04,268 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 00:00:03,248 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 06:00:01,564 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 12:00:02,408 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 18:00:01,819 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 00:00:04,968 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 06:00:01,934 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 12:00:03,500 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 18:00:04,662 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-30 10:32:13,915 INFO /home/mbr-python/.local/bin/bench start
+2024-08-30 10:32:20,925 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-30 10:32:20,925 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-30 10:32:20,925 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-30 10:32:20,944 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-30 12:00:02,163 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-30 18:00:05,029 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-30 18:59:41,418 INFO /home/mbr-python/.local/bin/bench start
+2024-08-30 18:59:50,556 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-30 18:59:50,556 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-30 18:59:50,592 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-30 18:59:50,592 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-30 19:01:20,647 INFO /home/mbr-python/.local/bin/bench
+2024-08-30 19:01:28,142 INFO /home/mbr-python/.local/bin/bench start
+2024-08-30 19:01:28,391 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-30 19:01:28,395 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-30 19:01:28,444 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-30 19:01:28,446 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-31 00:00:26,588 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 06:00:03,988 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 12:00:04,100 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-02 10:46:35,979 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 10:46:36,992 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 10:46:36,993 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 10:46:37,038 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 10:46:37,040 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 10:47:59,411 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 10:47:59,669 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 10:47:59,669 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 10:47:59,675 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 10:47:59,686 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 12:00:06,781 INFO /usr/local/bin/bench --verbose --site all backup

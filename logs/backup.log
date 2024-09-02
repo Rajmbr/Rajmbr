@@ -1,0 +1,526 @@
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240809_000001-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-09 00:00:02.000977
+Config  : ./dcode.com/private/backups/20240809_000001-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20240809_000001-dcode_com-database.sql.gz         796.3KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240809_060002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-09 06:00:03.540297
+Config  : ./dcode.com/private/backups/20240809_060002-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20240809_060002-dcode_com-database.sql.gz         807.7KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240809_120001-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-09 12:00:02.962641
+Config  : ./dcode.com/private/backups/20240809_120001-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20240809_120001-dcode_com-database.sql.gz         960.8KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240812_120009-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-12 12:00:14.774350
+Config  : ./dcode.com/private/backups/20240812_120009-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20240812_120009-dcode_com-database.sql.gz         989.6KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240812_180011-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-12 18:02:03.972163
+Config  : ./dcode.com/private/backups/20240812_180011-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20240812_180011-dcode_com-database.sql.gz         1012.6KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240813_000035-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-13 00:01:29.158661
+Config  : ./dcode.com/private/backups/20240813_000035-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20240813_000035-dcode_com-database.sql.gz         1.0MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240813_060009-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-13 06:00:15.554676
+Config  : ./dcode.com/private/backups/20240813_060009-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20240813_060009-dcode_com-database.sql.gz         1.0MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240813_120011-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-13 12:00:15.543565
+Config  : ./dcode.com/private/backups/20240813_120011-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20240813_120011-dcode_com-database.sql.gz         1.0MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240813_180024-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-13 18:00:30.257003
+Config  : ./dcode.com/private/backups/20240813_180024-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240813_180024-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240814_120015-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-14 12:00:32.504625
+Config  : ./dcode.com/private/backups/20240814_120015-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240814_120015-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240814_180040-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-14 18:08:50.498946
+Config  : ./dcode.com/private/backups/20240814_180040-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240814_180040-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240815_000039-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-15 00:04:41.800395
+Config  : ./dcode.com/private/backups/20240815_000039-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240815_000039-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240815_060015-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-15 06:01:15.318328
+Config  : ./dcode.com/private/backups/20240815_060015-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240815_060015-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240815_120024-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-15 12:03:03.675295
+Config  : ./dcode.com/private/backups/20240815_120024-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240815_120024-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240815_180011-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-15 18:00:37.014915
+Config  : ./dcode.com/private/backups/20240815_180011-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240815_180011-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240816_000039-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-16 00:02:49.980864
+Config  : ./dcode.com/private/backups/20240816_000039-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240816_000039-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240816_060008-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-16 06:01:17.791044
+Config  : ./dcode.com/private/backups/20240816_060008-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240816_060008-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240816_120005-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-16 12:00:45.522135
+Config  : ./dcode.com/private/backups/20240816_120005-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240816_120005-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240816_180012-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-16 18:00:42.711906
+Config  : ./dcode.com/private/backups/20240816_180012-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240816_180012-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240817_000003-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-17 00:00:16.591300
+Config  : ./dcode.com/private/backups/20240817_000003-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240817_000003-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240817_060003-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-17 06:00:28.454338
+Config  : ./dcode.com/private/backups/20240817_060003-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240817_060003-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240817_120005-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-17 12:00:36.959205
+Config  : ./dcode.com/private/backups/20240817_120005-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240817_120005-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240817_180002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-17 18:00:17.829975
+Config  : ./dcode.com/private/backups/20240817_180002-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240817_180002-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240818_000007-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-18 00:00:34.838417
+Config  : ./dcode.com/private/backups/20240818_000007-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240818_000007-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240818_060002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-18 06:00:14.135034
+Config  : ./dcode.com/private/backups/20240818_060002-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240818_060002-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240818_120002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-18 12:00:34.736729
+Config  : ./dcode.com/private/backups/20240818_120002-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240818_120002-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240818_180005-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-18 18:00:18.166038
+Config  : ./dcode.com/private/backups/20240818_180005-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240818_180005-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240819_000001-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-19 00:00:09.302120
+Config  : ./dcode.com/private/backups/20240819_000001-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240819_000001-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240819_060004-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-19 06:00:11.617728
+Config  : ./dcode.com/private/backups/20240819_060004-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240819_060004-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240819_120015-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-19 12:01:32.248692
+Config  : ./dcode.com/private/backups/20240819_120015-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240819_120015-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240819_180010-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-19 18:00:59.028532
+Config  : ./dcode.com/private/backups/20240819_180010-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240819_180010-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240820_000022-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-20 00:01:49.383010
+Config  : ./dcode.com/private/backups/20240820_000022-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240820_000022-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240820_060019-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-20 06:01:45.080361
+Config  : ./dcode.com/private/backups/20240820_060019-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240820_060019-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240820_120050-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-20 12:01:10.522437
+Config  : ./dcode.com/private/backups/20240820_120050-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240820_120050-dcode_com-database.sql.gz         1.0MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240820_180008-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-20 18:02:44.906423
+Config  : ./dcode.com/private/backups/20240820_180008-dcode_com-site_config_backup.json 225.0B
+Database: ./dcode.com/private/backups/20240820_180008-dcode_com-database.sql.gz         1.0MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240821_000018-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-21 00:00:23.606134
+Config  : ./dcode.com/private/backups/20240821_000018-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240821_000018-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240821_060004-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-21 06:00:59.860330
+Config  : ./dcode.com/private/backups/20240821_060004-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240821_060004-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240821_120013-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-21 12:00:21.582423
+Config  : ./dcode.com/private/backups/20240821_120013-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240821_120013-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240821_180009-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-21 18:00:20.168354
+Config  : ./dcode.com/private/backups/20240821_180009-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240821_180009-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240822_120010-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-22 12:00:21.465771
+Config  : ./dcode.com/private/backups/20240822_120010-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240822_120010-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240822_180027-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-22 18:03:18.264321
+Config  : ./dcode.com/private/backups/20240822_180027-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240822_180027-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240823_000027-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-23 00:01:38.781138
+Config  : ./dcode.com/private/backups/20240823_000027-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240823_000027-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240823_060010-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-23 06:00:37.641571
+Config  : ./dcode.com/private/backups/20240823_060010-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240823_060010-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240823_120031-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-23 12:00:43.302552
+Config  : ./dcode.com/private/backups/20240823_120031-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240823_120031-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240823_180026-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-23 18:01:32.575152
+Config  : ./dcode.com/private/backups/20240823_180026-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240823_180026-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240824_000024-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-24 00:00:27.158358
+Config  : ./dcode.com/private/backups/20240824_000024-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240824_000024-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240824_060010-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-24 06:00:19.295345
+Config  : ./dcode.com/private/backups/20240824_060010-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240824_060010-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240824_120020-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-24 12:00:48.247727
+Config  : ./dcode.com/private/backups/20240824_120020-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240824_120020-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240824_180126-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-24 18:02:23.045093
+Config  : ./dcode.com/private/backups/20240824_180126-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240824_180126-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240825_000207-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-25 00:12:29.184953
+Config  : ./dcode.com/private/backups/20240825_000207-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240825_000207-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240825_060150-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-25 06:10:00.558271
+Config  : ./dcode.com/private/backups/20240825_060150-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240825_060150-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240825_120121-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-25 12:04:51.582711
+Config  : ./dcode.com/private/backups/20240825_120121-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240825_120121-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240825_180200-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-25 18:08:22.461171
+Config  : ./dcode.com/private/backups/20240825_180200-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240825_180200-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240826_120017-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-26 12:01:53.030279
+Config  : ./dcode.com/private/backups/20240826_120017-dcode_com-site_config_backup.json 249.0B
+Database: ./dcode.com/private/backups/20240826_120017-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 75, in get_app_commands
+    app_command_module = importlib.import_module(f"{app}.commands")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'helpdeskpropla_integrations'
+Backup failed for Site dcode.com. Database or site_config.json may be corrupted
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 772, in backup
+    frappe.init(site=site)
+      context = {'sites': ['dcode.com'], 'force': False, 'verbose': True, 'profile': False}
+      with_files = False
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_backup_conf = False
+      verbose = True
+      compress = False
+      include = ''
+      exclude = ''
+      old_backup_metadata = False
+      scheduled_backup = <function scheduled_backup at 0x7f3d3745d620>
+      exit_code = 0
+      rollback_callback = None
+      site = 'dcode.com'
+  File "apps/frappe/frappe/__init__.py", line 313, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+      site = 'dcode.com'
+      sites_path = '.'
+      new_site = False
+      force = False
+  File "apps/frappe/frappe/__init__.py", line 1692, in setup_module_map
+    for module in get_module_list(app):
+      include_all_apps = True
+      apps = ['frappe', 'hrms', 'erpnext', 'helpdeskpropla_integrations']
+      app = 'helpdeskpropla_integrations'
+      module = 'subcontracting'
+  File "apps/frappe/frappe/__init__.py", line 1540, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+      app_name = 'helpdeskpropla_integrations'
+  File "apps/frappe/frappe/__init__.py", line 1505, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+      app_name = 'helpdeskpropla_integrations'
+      joins = ('modules.txt',)
+  File "apps/frappe/frappe/__init__.py", line 1535, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+      modulename = 'helpdeskpropla_integrations'
+      joins = ['modules.txt']
+      abspath = <function abspath at 0x7f3d388d8d60>
+      dirname = <function dirname at 0x7f3d388d8900>
+      join = <function join at 0x7f3d388d85e0>
+  File "apps/frappe/frappe/__init__.py", line 1476, in get_module
+    return importlib.import_module(modulename)
+      modulename = 'helpdeskpropla_integrations'
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+      name = 'helpdeskpropla_integrations'
+      package = None
+      level = 0
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+      name = 'helpdeskpropla_integrations'
+      package = None
+      level = 0
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+      name = 'helpdeskpropla_integrations'
+      import_ = <function _gcd_import at 0x7f3d38a7fd80>
+      module = <exception while printing> Traceback (most recent call last):
+          File "env/lib/python3.11/site-packages/traceback_with_variables/core.py", line 222, in _to_cropped_str
+            raw = print_(obj)
+                  ^^^^^^^^^^^
+          File "apps/frappe/frappe/utils/__init__.py", line 328, in dict_printer
+            if key in v:
+               ^^^^^^^^
+        TypeError: argument of type 'object' is not iterable
+        
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+      name = 'helpdeskpropla_integrations'
+      import_ = <function _gcd_import at 0x7f3d38a7fd80>
+      path = None
+      parent = ''
+      parent_spec = None
+      spec = None
+builtins.ModuleNotFoundError: No module named 'helpdeskpropla_integrations'
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240827_000004-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-27 00:01:46.666296
+Config  : ./dcode.com/private/backups/20240827_000004-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240827_000004-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240827_060007-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-27 06:00:23.941853
+Config  : ./dcode.com/private/backups/20240827_060007-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240827_060007-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240827_120045-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-27 12:03:01.307344
+Config  : ./dcode.com/private/backups/20240827_120045-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240827_120045-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240827_180043-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-27 18:05:10.622871
+Config  : ./dcode.com/private/backups/20240827_180043-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240827_180043-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240828_000019-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-28 00:01:18.202766
+Config  : ./dcode.com/private/backups/20240828_000019-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240828_000019-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240828_060003-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-28 06:00:05.584650
+Config  : ./dcode.com/private/backups/20240828_060003-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240828_060003-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240828_120010-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-28 12:02:27.285807
+Config  : ./dcode.com/private/backups/20240828_120010-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240828_120010-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240828_180006-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-28 18:00:09.572396
+Config  : ./dcode.com/private/backups/20240828_180006-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240828_180006-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240829_000017-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-29 00:00:18.798691
+Config  : ./dcode.com/private/backups/20240829_000017-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240829_000017-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240829_060006-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-29 06:00:07.285517
+Config  : ./dcode.com/private/backups/20240829_060006-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240829_060006-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240829_120034-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-29 12:00:35.457800
+Config  : ./dcode.com/private/backups/20240829_120034-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240829_120034-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240829_180033-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-29 18:02:54.537828
+Config  : ./dcode.com/private/backups/20240829_180033-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240829_180033-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240830_120015-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-30 12:01:40.758148
+Config  : ./dcode.com/private/backups/20240830_120015-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240830_120015-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240830_180039-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-30 18:04:13.563765
+Config  : ./dcode.com/private/backups/20240830_180039-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240830_180039-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240831_000049-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-31 00:02:35.268024
+Config  : ./dcode.com/private/backups/20240831_000049-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240831_000049-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240831_060022-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-31 06:01:34.549885
+Config  : ./dcode.com/private/backups/20240831_060022-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240831_060022-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240831_120025-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-08-31 12:00:42.938965
+Config  : ./dcode.com/private/backups/20240831_120025-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240831_120025-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d160353e3402f34e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d160353e3402f34e | /usr/bin/gzip >> ./dcode.com/private/backups/20240902_120035-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-09-02 12:02:40.317454
+Config  : ./dcode.com/private/backups/20240902_120035-dcode_com-site_config_backup.json 250.0B
+Database: ./dcode.com/private/backups/20240902_120035-dcode_com-database.sql.gz         1.1MiB
+Backup for Site dcode.com has been successfully completed

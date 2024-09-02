@@ -1,0 +1,240 @@
+2024-08-20 11:17:31,768 ERROR scheduler Exception in Enqueue Events for Site dcode.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 78, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 96, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 72, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 93, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 541, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 546, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 553, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/mbr-python/Desktop/ERPNEXT/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2024-08-20 11:18:41,365 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_reminders_in_advance_weekly because it was found in queue for dcode.com
+2024-08-20 11:18:41,366 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for dcode.com
+2024-08-20 11:18:41,369 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for dcode.com
+2024-08-20 11:18:41,370 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for dcode.com
+2024-08-20 11:18:41,372 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for dcode.com
+2024-08-20 11:18:41,373 ERROR scheduler Skipped queueing hrms.hr.doctype.job_opening.job_opening.close_expired_job_openings because it was found in queue for dcode.com
+2024-08-20 11:18:41,374 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_daily_feedback_reminder because it was found in queue for dcode.com
+2024-08-20 11:18:41,375 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.send_summary because it was found in queue for dcode.com
+2024-08-20 11:18:41,377 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_work_anniversary_reminders because it was found in queue for dcode.com
+2024-08-20 11:18:41,378 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_birthday_reminders because it was found in queue for dcode.com
+2024-08-20 11:18:41,379 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails because it was found in queue for dcode.com
+2024-08-20 11:18:41,380 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for dcode.com
+2024-08-20 11:18:41,382 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_weekly because it was found in queue for dcode.com
+2024-08-20 11:18:41,383 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for dcode.com
+2024-08-20 11:18:41,384 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for dcode.com
+2024-08-20 11:18:41,387 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for dcode.com
+2024-08-20 11:18:41,389 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for dcode.com
+2024-08-20 11:18:41,390 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for dcode.com
+2024-08-20 11:18:41,391 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for dcode.com
+2024-08-20 11:18:41,392 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for dcode.com
+2024-08-20 11:18:41,394 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset_maintenance_log.asset_maintenance_log.update_asset_maintenance_log_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,395 ERROR scheduler Skipped queueing erpnext.accounts.utils.run_ledger_health_checks because it was found in queue for dcode.com
+2024-08-20 11:18:41,396 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_daily because it was found in queue for dcode.com
+2024-08-20 11:18:41,397 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for dcode.com
+2024-08-20 11:18:41,398 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,400 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,401 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,402 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for dcode.com
+2024-08-20 11:18:41,403 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,405 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for dcode.com
+2024-08-20 11:18:41,406 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for dcode.com
+2024-08-20 11:18:41,407 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for dcode.com
+2024-08-20 11:18:41,408 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for dcode.com
+2024-08-20 11:18:41,409 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for dcode.com
+2024-08-20 11:18:41,411 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,412 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for dcode.com
+2024-08-20 11:18:41,413 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for dcode.com
+2024-08-20 11:18:41,414 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,416 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for dcode.com
+2024-08-20 11:18:41,417 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for dcode.com
+2024-08-20 11:18:41,418 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,419 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for dcode.com
+2024-08-20 11:18:41,421 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for dcode.com
+2024-08-20 11:18:41,422 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,423 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for dcode.com
+2024-08-20 11:18:41,424 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for dcode.com
+2024-08-20 11:18:41,426 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for dcode.com
+2024-08-20 11:18:41,427 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for dcode.com
+2024-08-20 11:18:41,428 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for dcode.com
+2024-08-20 11:18:41,429 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for dcode.com
+2024-08-20 11:18:41,431 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for dcode.com
+2024-08-20 11:18:41,432 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for dcode.com
+2024-08-20 11:18:41,436 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for dcode.com
+2024-08-20 11:18:41,437 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for dcode.com
+2024-08-20 11:18:41,439 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for dcode.com
+2024-08-20 11:18:41,440 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for dcode.com
+2024-08-20 11:18:41,441 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for dcode.com
+2024-08-20 11:18:41,442 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for dcode.com
+2024-08-20 11:18:41,444 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for dcode.com
+2024-08-20 11:18:41,445 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for dcode.com
+2024-08-20 11:18:41,446 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for dcode.com
+2024-08-20 11:18:41,447 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for dcode.com
+2024-08-20 11:18:41,448 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for dcode.com
+2024-08-20 11:18:41,450 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for dcode.com
+2024-08-20 11:18:41,451 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for dcode.com
+2024-08-20 11:18:41,452 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for dcode.com
+2024-08-20 11:18:41,453 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for dcode.com
+2024-08-20 11:18:41,455 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for dcode.com
+2024-08-20 11:18:41,456 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for dcode.com
+2024-08-20 11:18:41,457 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for dcode.com
+2024-08-20 11:18:41,458 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for dcode.com
+2024-08-20 11:18:41,460 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for dcode.com
+2024-08-20 11:18:41,461 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for dcode.com
+2024-08-20 11:18:41,462 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for dcode.com
+2024-08-20 11:18:41,464 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for dcode.com
+2024-08-20 11:18:41,465 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for dcode.com
+2024-08-20 11:18:41,466 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for dcode.com
+2024-08-20 11:18:41,468 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for dcode.com
+2024-08-20 11:18:41,469 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for dcode.com
+2024-08-20 11:18:41,470 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for dcode.com
+2024-08-20 11:18:41,472 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for dcode.com
+2024-08-20 11:18:41,473 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for dcode.com
+2024-08-20 11:18:41,474 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for dcode.com
+2024-08-20 11:18:41,476 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for dcode.com
+2024-08-20 11:18:41,477 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for dcode.com
+2024-08-20 11:18:41,479 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for dcode.com
+2024-08-20 11:18:41,480 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for dcode.com
+2024-08-20 11:18:41,481 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for dcode.com
+2024-08-20 11:18:41,482 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for dcode.com
+2024-08-20 11:18:41,483 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for dcode.com
+2024-08-20 11:18:41,485 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for dcode.com
+2024-08-20 11:18:41,486 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for dcode.com
+2024-08-20 11:19:32,673 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for dcode.com
+2024-08-20 11:19:32,678 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for dcode.com
+2024-08-20 11:19:32,681 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for dcode.com
+2024-08-20 11:19:32,683 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for dcode.com
+2024-08-20 11:19:32,699 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for dcode.com
+2024-08-20 11:19:32,701 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for dcode.com
+2024-08-20 11:19:32,705 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for dcode.com
+2024-08-20 11:19:32,706 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for dcode.com
+2024-08-20 11:19:32,708 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for dcode.com
+2024-08-20 11:19:32,709 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for dcode.com
+2024-08-20 11:19:32,710 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for dcode.com
+2024-08-20 11:19:32,747 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for dcode.com
+2024-08-20 11:19:32,748 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for dcode.com
+2024-08-20 11:19:32,750 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for dcode.com
+2024-08-20 11:19:32,751 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for dcode.com
+2024-08-20 11:19:32,753 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for dcode.com
+2024-08-20 11:19:32,754 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for dcode.com
+2024-08-20 11:19:32,755 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for dcode.com
+2024-08-20 11:19:32,756 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for dcode.com
+2024-08-20 11:19:32,757 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for dcode.com
+2024-08-20 11:19:32,759 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for dcode.com
+2024-08-20 11:19:32,760 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for dcode.com
+2024-08-20 11:19:32,764 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for dcode.com
+2024-08-20 11:19:32,765 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for dcode.com
+2024-08-20 11:19:32,767 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for dcode.com
+2024-08-20 11:19:32,768 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for dcode.com
+2024-08-20 11:19:32,769 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for dcode.com
+2024-08-20 11:19:32,770 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for dcode.com
+2024-08-20 11:19:32,772 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for dcode.com
+2024-08-20 11:19:32,773 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for dcode.com
+2024-08-20 11:19:32,774 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for dcode.com
+2024-08-20 11:19:32,775 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for dcode.com
+2024-08-20 11:19:32,776 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for dcode.com
+2024-08-20 11:19:32,778 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for dcode.com
+2024-08-20 11:19:32,779 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for dcode.com
+2024-08-20 11:19:32,780 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for dcode.com
+2024-08-20 11:19:32,782 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for dcode.com
+2024-08-20 11:19:32,783 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for dcode.com
+2024-08-20 11:19:32,784 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for dcode.com
+2024-08-20 11:19:32,785 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for dcode.com
+2024-08-20 11:19:32,787 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for dcode.com
+2024-08-20 11:19:32,788 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for dcode.com
+2024-08-20 11:19:32,789 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for dcode.com
+2024-08-20 11:19:32,790 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for dcode.com
+2024-08-20 11:19:32,792 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for dcode.com
+2024-08-20 11:19:32,793 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for dcode.com
+2024-08-20 11:19:32,794 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for dcode.com
+2024-08-20 11:19:32,795 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for dcode.com
+2024-08-20 11:19:41,580 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for dcode.com
+2024-08-20 11:19:41,589 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for dcode.com
+2024-08-20 11:19:41,592 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for dcode.com
+2024-08-20 11:19:41,594 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for dcode.com
+2024-08-20 11:19:41,609 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for dcode.com
+2024-08-20 11:19:41,610 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for dcode.com
+2024-08-20 11:19:41,614 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for dcode.com
+2024-08-20 11:19:41,616 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for dcode.com
+2024-08-20 11:19:41,617 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for dcode.com
+2024-08-20 11:19:41,619 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for dcode.com
+2024-08-20 11:19:41,620 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for dcode.com
+2024-08-20 11:19:41,659 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for dcode.com
+2024-08-20 11:19:41,660 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for dcode.com
+2024-08-20 11:19:41,662 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for dcode.com
+2024-08-20 11:19:41,663 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for dcode.com
+2024-08-20 11:19:41,665 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for dcode.com
+2024-08-20 11:19:41,666 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for dcode.com
+2024-08-20 11:19:41,668 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for dcode.com
+2024-08-20 11:19:41,669 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for dcode.com
+2024-08-20 11:19:41,671 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for dcode.com
+2024-08-20 11:19:41,672 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for dcode.com
+2024-08-20 11:19:41,673 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for dcode.com
+2024-08-20 11:19:41,682 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for dcode.com
+2024-08-20 11:19:41,683 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for dcode.com
+2024-08-20 11:19:41,685 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for dcode.com
+2024-08-20 11:19:41,686 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for dcode.com
+2024-08-20 11:19:41,687 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for dcode.com
+2024-08-20 11:19:41,689 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for dcode.com
+2024-08-20 11:19:41,690 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for dcode.com
+2024-08-20 11:19:41,691 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for dcode.com
+2024-08-20 11:19:41,692 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for dcode.com
+2024-08-20 11:19:41,694 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for dcode.com
+2024-08-20 11:19:41,695 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for dcode.com
+2024-08-20 11:19:41,697 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for dcode.com
+2024-08-20 11:19:41,698 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for dcode.com
+2024-08-20 11:19:41,699 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for dcode.com
+2024-08-20 11:19:41,701 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for dcode.com
+2024-08-20 11:19:41,702 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for dcode.com
+2024-08-20 11:19:41,703 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for dcode.com
+2024-08-20 11:19:41,705 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for dcode.com
+2024-08-20 11:19:41,706 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for dcode.com
+2024-08-20 11:19:41,707 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for dcode.com
+2024-08-20 11:19:41,709 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for dcode.com
+2024-08-20 11:19:41,710 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for dcode.com
